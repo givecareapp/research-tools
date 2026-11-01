@@ -8,7 +8,7 @@
       "id": "@givecare/tools.InstrumentExport",
       "path": "data/instruments-export.json",
       "for": [
-        "gc-evals",
+        "gc-bench",
         "gc-sms"
       ]
     },

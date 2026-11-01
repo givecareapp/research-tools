@@ -61,7 +61,7 @@ type-checks the root project and every `packages/*/tsconfig.json`.
 ## Required path
 
 Change the TypeScript owner first, run `npm run project:instruments`, inspect the
-diff, and commit the projection on `main`. Consumers (`gc-evals`, `gc-sms`) request the exact
+diff, and commit the projection on `main`. Consumers (`gc-bench` `evals/`, `gc-sms`) request the exact
 commit through the workspace `projection-ref` command and verify the
 committed bytes.
 

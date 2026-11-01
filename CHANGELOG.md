@@ -6,6 +6,12 @@ All notable changes to `@givecare/tools` are documented here. The format follows
 
 ## [Unreleased]
 
+### Removed
+
+- `@givecare/benefit-evidence` (0.1.0, never published to npm) moved to the
+  benefits repository (`gc-benefits`, `benefit-evidence/`), which owns the
+  BenefitEvidence profile.
+
 ### Changed
 
 - The repository is now the GiveCare Tools collection, an npm workspace of two

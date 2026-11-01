@@ -15,11 +15,6 @@ The repo is an npm workspace: the GiveCare Tools collection.
   (shared export builder), `src/scoring/givecareScore.ts` (composite GiveCare
   Score), `src/lib/time.ts`, `src/__tests__/`, and `GC-SDOH.md`, the public
   instrument specification.
-- `packages/benefit-evidence/` — `@givecare/benefit-evidence`: `src/model.ts`
-  (public profile types), `src/validate.ts` (dependency-free validator and
-  helpers), `src/index.ts` (public exports), `SPEC.md` (the public profile),
-  `schema/benefit-evidence.schema.json` (the same contract as JSON Schema
-  2020-12), `examples/`, `src/__tests__/`.
 - `src/` — `@givecare/tools`, the root compatibility package: three relative
   re-exports of `packages/assessment/src`, compiled self-contained into `dist/`
   so a Git install needs no published dependency. `src/__tests__/compatibility.test.ts`

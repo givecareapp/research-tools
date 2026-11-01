@@ -2,27 +2,22 @@
 
 Type: reference.
 
-> Open-source TypeScript packages for caregiver support: an assessment
-> standard and an evidence profile for benefit facts.
+> Open-source TypeScript packages for caregiver support: the GC-SDOH
+> assessment standard.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 | Package | Standard | What it lets you do |
 |---|---|---|
 | [`@givecare/assessment`](./packages/assessment/) | **GC-SDOH** | Score a caregiver's six social-determinant domains with GC-SDOH-6, EMA-3 and the GC-SDOH-30 bank, compute the GiveCare Score, and route to the domain that needs attention. [Specification](./packages/assessment/GC-SDOH.md). |
-| [`@givecare/benefit-evidence`](./packages/benefit-evidence/) | **BenefitEvidence v0.1** | Publish and validate source-backed claims about a benefit program — access routes, availability, eligibility facts — with `unknown`, `conflicting` and `expired` as first-class states. Types, JSON Schema, validator, examples. |
 
-Both are small, deterministic, dependency-free, I/O-free, and MIT licensed.
-GC-SDOH is an assessment standard; BenefitEvidence is not another assessment,
-it is the evidence and provenance profile for benefit facts. What is
-deliberately **not** here: a benefits catalog (that is GiveCare's private
-`gc-benefits`), a rule language (see
+It is small, deterministic, dependency-free, I/O-free, and MIT licensed.
+What is deliberately **not** here: a benefits catalog or the BenefitEvidence
+profile (both live in GiveCare's benefits repository), a rule language (see
 [RuleSpec](https://github.com/TheAxiomFoundation/axiom-rules-engine)), or a
-services standard. BenefitEvidence can optionally point to a
-[CommonBenefits](https://commonbenefits.dev/) Program representation or a
-RuleSpec artifact; it does not replace either.
+services standard.
 
-## 30-second examples
+## 30-second example
 
 ```typescript
 import { scoreInstrument, computeGiveCareScoreFromInstruments, flaggedDomains } from '@givecare/assessment'
@@ -30,12 +25,6 @@ import { scoreInstrument, computeGiveCareScoreFromInstruments, flaggedDomains } 
 const sdoh6 = scoreInstrument('gc_sdoh6', 'v2', { financial: 3, social: 2, health: 1, housing: 0, navigation: 2, burnout: 3 })
 const score = computeGiveCareScoreFromInstruments([{ instrument: 'gc_sdoh6', subscores: sdoh6.subscores }])
 console.log(score.score, flaggedDomains(score.domains)) // 0-100 (higher = more capacity), e.g. ['GC4', 'GC6']
-```
-
-```typescript
-import { validateBenefitEvidence } from '@givecare/benefit-evidence'
-
-const result = validateBenefitEvidence(document) // { ok: true, profile } | { ok: false, violations: [{ path, message }] }
 ```
 
 Each package README has the full API.

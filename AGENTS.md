@@ -68,7 +68,7 @@ Run `npm run check`, `npm run typecheck:tsc` and `npm run build` before handoff.
 
 - Grow the public API only for demonstrated reuse. New packages are an owner
   decision; BenefitEvidence's public profile lives in this package, while
-  `gc-benefits` implements its stronger private admission process.
+  `delivery-benefits` implements its stronger private admission process.
 - `@givecare/tools` keeps exporting exactly what 4.0.0 exported until a major
   release says otherwise.
 - Keep the package dependency-free, I/O-free, and framework-free.

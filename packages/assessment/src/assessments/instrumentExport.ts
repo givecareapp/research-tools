@@ -7,7 +7,7 @@ import { GC_DOMAIN_LABELS, GC_DOMAIN_WEIGHTS, SDOH6_DOMAIN_MAP, type GCDomainCod
  * research-tools owns the instrument definition. This snapshot is the canonical
  * artifact downstream copies gate against:
  *   - `research-bench` `evals/` syncs its exact bytes before adding local packaging metadata.
- *   - `gc-sms` syncs its exact bytes without redefining questions.
+ *   - `delivery-sms` syncs its exact bytes without redefining questions.
  *
  * Only the fields that must not silently drift live here: instrument ids,
  * question ids + prompts, per-question GC domains (where defined), and the

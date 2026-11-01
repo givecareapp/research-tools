@@ -9,7 +9,7 @@
       "path": "data/instruments-export.json",
       "for": [
         "research-bench",
-        "gc-sms"
+        "delivery-sms"
       ]
     },
     {
@@ -17,7 +17,7 @@
       "path": "src",
       "package": "@givecare/tools",
       "for": [
-        "gc-sms"
+        "delivery-sms"
       ]
     }
   ],

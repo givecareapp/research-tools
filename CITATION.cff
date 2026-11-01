@@ -5,7 +5,7 @@ authors:
   - family-names: Madad
     given-names: Ali
     affiliation: GiveCare
-repository-code: "https://github.com/givecareapp/givecare-tools"
+repository-code: "https://github.com/givecareapp/research-tools"
 url: "https://givecareapp.com"
 license: MIT
 version: 4.0.0

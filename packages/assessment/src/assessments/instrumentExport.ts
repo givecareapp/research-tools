@@ -4,7 +4,7 @@ import { GC_DOMAIN_LABELS, GC_DOMAIN_WEIGHTS, SDOH6_DOMAIN_MAP, type GCDomainCod
 /**
  * The shared, machine-readable projection of the public SDOH instruments.
  *
- * gc-tools owns the instrument definition. This snapshot is the canonical
+ * research-tools owns the instrument definition. This snapshot is the canonical
  * artifact downstream copies gate against:
  *   - `gc-bench` `evals/` syncs its exact bytes before adding local packaging metadata.
  *   - `gc-sms` syncs its exact bytes without redefining questions.

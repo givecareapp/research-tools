@@ -1,6 +1,6 @@
 {
   "schema_version": "givecare.module/v2",
-  "repository": "gc-tools",
+  "repository": "research-tools",
   "owns": "GiveCare Tools: public TypeScript packages for caregiver assessment (GC-SDOH) and source-backed benefit evidence (BenefitEvidence)",
   "check": "npm run check",
   "produces": [

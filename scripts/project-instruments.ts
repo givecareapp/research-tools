@@ -5,7 +5,7 @@
  * instrument definition, inspect the diff, then commit on `main`.
  *
  * Consumers never run this script. They pin the committed bytes at an exact
- * gc-tools commit through the workspace `projection-ref` command
+ * research-tools commit through the workspace `projection-ref` command
  * (capability `methods.assessment.project`) and verify the digest.
  */
 import { closeSync, fchmodSync, fsyncSync, mkdtempSync, openSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs'

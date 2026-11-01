@@ -74,7 +74,7 @@ npm install @givecare/assessment
 ```
 
 Node 18+. No runtime dependencies, no network, no I/O. To work from source:
-`git clone https://github.com/givecareapp/givecare-tools && cd givecare-tools && npm ci && npm run build` (builds every package)`.
+`git clone https://github.com/givecareapp/research-tools && cd research-tools && npm ci && npm run build` (builds every package)`.
 
 ## Usage
 
@@ -161,7 +161,7 @@ Originally created by Ali Madad (@amadad).
   author       = {Ali Madad},
   title        = {{GiveCare Tools}: Open-source frameworks for caregiving support and social determinants of health assessment},
   note         = {GC-SDOH-30 v3.0},
-  howpublished = {\url{https://github.com/givecareapp/givecare-tools}},
+  howpublished = {\url{https://github.com/givecareapp/research-tools}},
   year         = {2026}
 }
 ```

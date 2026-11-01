@@ -1,4 +1,4 @@
-# AGENTS.md — gc-tools
+# AGENTS.md — research-tools
 
 Type: reference.
 

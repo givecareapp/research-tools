@@ -4,7 +4,7 @@ Type: reference.
 
 This repo owns public TypeScript assessment and scoring helpers. Root
 workspace `AGENTS.md` rules apply; this file adds local gates. Owner intent:
-`/home/deploy/wiki/aims/givecare-instruments.md`.
+`/home/deploy/wiki/aims/givecare-bench.md` (Instruments section).
 
 ## Layout
 
@@ -86,7 +86,7 @@ Run `npm run check`, `npm run typecheck:tsc` and `npm run build` before handoff.
   decision. BSFC-s is permitted only as a free web assessment, never in a paid
   surface. CWBS is permitted for GiveCare use but is not current product behavior.
   Instruments in negotiation stay unavailable until licensed. Source of truth:
-  `/home/deploy/wiki/aims/givecare-instruments.md`.
+  `/home/deploy/wiki/aims/givecare-bench.md` (Instruments section).
 
 ## Gotchas
 

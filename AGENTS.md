@@ -42,7 +42,7 @@ A missing or misspelled checker fails; diagnostics are never retried with the
 other checker. `tsconfig.json` lists `types: ["node"]` because TypeScript 7 no
 longer includes `@types/*` automatically and the tests use `node:fs`. Inside
 the GiveCare workspace, heavy steps take a slot from the host-wide pool
-(`../scripts/heavy_slot.py`); a standalone clone runs unthrottled.
+(`../../scripts/heavy_slot.py`); a standalone clone runs unthrottled.
 `src/__tests__/checkScript.test.ts` is the regression suite for the gate; it
 type-checks the root project and every `packages/*/tsconfig.json`.
 
@@ -56,7 +56,7 @@ type-checks the root project and every `packages/*/tsconfig.json`.
 ## Required path
 
 Change the TypeScript owner first, run `npm run project:instruments`, inspect the
-diff, and commit the projection on `main`. Consumers (`invisiblebench` `evals/`, `mira`) request the exact
+diff, and commit the projection on `main`. Consumers (`care-evals`, `mira`) request the exact
 commit through the workspace `projection-ref` command and verify the
 committed bytes.
 

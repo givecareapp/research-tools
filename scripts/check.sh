@@ -32,9 +32,9 @@ if [[ ! -x "$bin/vitest" ]]; then
   exit 1
 fi
 
-# Host-wide slot pool (../scripts/heavy_slot.py; its docstring is the contract).
+# Host-wide slot pool (../../scripts/heavy_slot.py; its docstring is the contract).
 # GIVECARE_HEAVY_SLOT_HELPER="" or a clone without the workspace runs unthrottled.
-helper="${GIVECARE_HEAVY_SLOT_HELPER-$root/../scripts/heavy_slot.py}"
+helper="${GIVECARE_HEAVY_SLOT_HELPER-$root/../../scripts/heavy_slot.py}"
 if [[ -n "$helper" && ! -f "$helper" ]]; then helper=""; fi
 if [[ -z "$helper" ]]; then echo "check: no host slot pool; heavy steps run unthrottled" >&2; fi
 

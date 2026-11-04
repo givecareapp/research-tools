@@ -9,6 +9,7 @@
       "path": "data/instruments-export.json",
       "for": [
         "invisiblebench",
+        "care-evals",
         "mira"
       ]
     },

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/givecareapp/research-tools/contracts/instrument-export.v2.schema.json",
+  "$id": "https://github.com/givecareapp/assessment/contracts/instrument-export.v2.schema.json",
   "title": "@givecare/tools.InstrumentExport/v2",
-  "description": "The one verified instrument definition, projected to delivery-sms, research-bench and the web assessment. v2 adds per-instrument version and license so every measurement binds to the exact instrument that produced it, and so licensed instruments are labelled rather than copied.",
+  "description": "The one verified instrument definition, projected to mira, invisiblebench and the web assessment. v2 adds per-instrument version and license so every measurement binds to the exact instrument that produced it, and so licensed instruments are labelled rather than copied.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "owner_revision", "instruments", "domainWeights", "domainLabels"],

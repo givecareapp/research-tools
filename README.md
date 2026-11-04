@@ -63,7 +63,7 @@ Originally created by Ali Madad (@amadad).
 @misc{madad_givecare_tools_2026,
   author       = {Ali Madad},
   title        = {{GiveCare Tools}: Open-source frameworks for caregiving support and social determinants of health assessment},
-  howpublished = {\url{https://github.com/givecareapp/research-tools}},
+  howpublished = {\url{https://github.com/givecareapp/assessment}},
   year         = {2026}
 }
 ```

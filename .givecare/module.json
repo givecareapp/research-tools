@@ -1,15 +1,15 @@
 {
   "schema_version": "givecare.module/v2",
-  "repository": "research-tools",
-  "owns": "GiveCare Tools: public TypeScript packages for caregiver assessment (GC-SDOH) and source-backed benefit evidence (BenefitEvidence)",
+  "repository": "assessment",
+  "owns": "GiveCare Tools: public TypeScript packages for caregiver assessment (GC-SDOH)",
   "check": "npm run check",
   "produces": [
     {
       "id": "@givecare/tools.InstrumentExport",
       "path": "data/instruments-export.json",
       "for": [
-        "research-bench",
-        "delivery-sms"
+        "invisiblebench",
+        "mira"
       ]
     },
     {
@@ -17,7 +17,7 @@
       "path": "src",
       "package": "@givecare/tools",
       "for": [
-        "delivery-sms"
+        "mira"
       ]
     }
   ],

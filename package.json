@@ -6,11 +6,11 @@
   "author": "Ali Madad <ali@scty.org>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/givecareapp/research-tools"
+    "url": "https://github.com/givecareapp/assessment"
   },
-  "homepage": "https://github.com/givecareapp/research-tools#readme",
+  "homepage": "https://github.com/givecareapp/assessment#readme",
   "bugs": {
-    "url": "https://github.com/givecareapp/research-tools/issues"
+    "url": "https://github.com/givecareapp/assessment/issues"
   },
   "keywords": [
     "sdoh",

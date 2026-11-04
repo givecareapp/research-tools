@@ -1,4 +1,4 @@
-# AGENTS.md — research-tools
+# AGENTS.md — assessment
 
 Type: reference.
 
@@ -56,7 +56,7 @@ type-checks the root project and every `packages/*/tsconfig.json`.
 ## Required path
 
 Change the TypeScript owner first, run `npm run project:instruments`, inspect the
-diff, and commit the projection on `main`. Consumers (`research-bench` `evals/`, `delivery-sms`) request the exact
+diff, and commit the projection on `main`. Consumers (`invisiblebench` `evals/`, `mira`) request the exact
 commit through the workspace `projection-ref` command and verify the
 committed bytes.
 
@@ -68,7 +68,7 @@ Run `npm run check`, `npm run typecheck:tsc` and `npm run build` before handoff.
 
 - Grow the public API only for demonstrated reuse. New packages are an owner
   decision; BenefitEvidence's public profile lives in this package, while
-  `delivery-benefits` implements its stronger private admission process.
+  `benefits` implements its stronger private admission process.
 - `@givecare/tools` keeps exporting exactly what 4.0.0 exported until a major
   release says otherwise.
 - Keep the package dependency-free, I/O-free, and framework-free.

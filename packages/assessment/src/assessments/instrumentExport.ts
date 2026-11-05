@@ -6,13 +6,13 @@ import { GC_DOMAIN_LABELS, GC_DOMAIN_WEIGHTS, SDOH6_DOMAIN_MAP, type GCDomainCod
  *
  * assessment owns the instrument definition. This snapshot is the canonical
  * artifact downstream copies gate against:
- *   - `invisiblebench` `evals/` syncs its exact bytes before adding local packaging metadata.
+ *   - `care-evals` syncs its exact bytes before adding local packaging metadata.
  *   - `mira` syncs its exact bytes without redefining questions.
  *
  * Only the fields that must not silently drift live here: instrument ids,
  * question ids + prompts, per-question GC domains (where defined), and the
  * structural composite weights. Human-facing packaging copy (titles,
- * descriptions, cadence, license notes, band labels) stays in the invisiblebench evals
+ * descriptions, cadence, license notes, band labels) stays in the care-evals
  * distribution record, not in the code definition.
  */
 export interface ExportedQuestion {
